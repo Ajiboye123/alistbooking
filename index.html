@@ -208,24 +208,23 @@
        
     </section>
 
+    
     <!-- Footer -->
     <footer class="bg-black text-white py-12 md:pb-12 pb-12">
         <div class="container mx-auto px-4 text-center">
-            <a href="#header">
-               <img src="assets/img/logo.png" alt="Footer Logo" class="h-10 mx-auto mb-4">
-            </a>
-            <ul class="flex justify-center space-x-6 mb-6">
-                <li><a href="pages/about.html" class="hover:text-gray-300">About Us</a></li>
-                <li><a href="pages/services.html" class="hover:text-gray-300">Services</a></li>
-                <li><a href="#celebrityForm" class="hover:text-gray-300">Contact</a></li>
+            <img src="../assets/img/logo.png" alt="Footer Logo" class="h-10 mx-auto mb-4">
+            <ul class="flex flex-col md:flex-row items-center md:justify-center md:space-x-6 mb-6 space-y-6 md:space-y-0">
+                <li><a href="../pages/about.html" class="hover:text-gray-300">About Us</a></li>
+                <li><a href="../pages/services.html" class="hover:text-gray-300">Services</a></li>
+                <li><a href="../index.html#celebrityForm" class="hover:text-gray-300">Contact</a></li>
                 <li><a href="#" class="hover:text-gray-300">Privacy Policy</a></li>
             </ul>
-            <p class="text-sm">&copy; 2025 A-List Booking Agency. All rights reserved.</p>
+            <p class="text-sm font-extralight">&copy; 2025 A-List Booking Agency. All rights reserved.</p>
         </div>
     </footer>
 
 
-    <!-- Button -->
+<!-- Button -->
     <div id="chatButtonContainer" class="fixed bottom-4 right-4 z-50">
         <button id="chatButton" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-full shadow-md transition-all duration-300 ease-in-out flex items-center">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 animate-pulse" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -257,8 +256,71 @@
         </div>
     </div>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const chatButton = document.getElementById('chatButton');
+            const chatPopup = document.getElementById('chatPopup');
+            const closeChat = document.getElementById('closeChat');
+            const faqSection = document.getElementById('faqSection');
+            const faqAnswer = document.getElementById('faqAnswer');
+            const answerText = document.getElementById('answerText');
+            const userMessage = document.getElementById('userMessage');
+            const sendMessage = document.getElementById('sendMessage');
+            const messageSent = document.getElementById('messageSent');
 
-</body>
-<script src="/assets/js/script.js"></script>
+            if (chatButton && chatPopup && closeChat && faqSection && faqAnswer && answerText && userMessage && sendMessage && messageSent) {
+                // FAQ Data
+                const faqs = [
+                    { question: "How do I book a celebrity?", answer: "Visit the booking page and fill out the form." },
+                    { question: "What types of events do you handle?", answer: "We handle corporate events, private parties, and more." },
+                    { question: "Can I get a quote?", answer: "Yes, please contact us with your event details." },
+                    { question: "How long does it take to confirm a booking?", answer: "Confirmation times vary, we will get back to you as soon as possible." }
+                ];
 
-</html>
+                // Create FAQ Buttons
+                faqs.forEach(faq => {
+                    const button = document.createElement('button');
+                    button.textContent = faq.question;
+                    button.classList.add('bg-gray-100', 'hover:bg-gray-200', 'text-gray-700', 'py-2', 'px-4', 'rounded-md', 'mb-2', 'w-full', 'text-left');
+                    button.addEventListener('click', () => {
+                        answerText.textContent = faq.answer;
+                        faqAnswer.classList.remove('hidden');
+                        userMessage.classList.add('hidden');
+                        sendMessage.classList.add('hidden');
+                    });
+                    faqSection.appendChild(button);
+                });
+
+                // Event Listeners
+                chatButton.addEventListener('click', () => {
+                    chatPopup.classList.remove('hidden');
+                    faqAnswer.classList.add('hidden');
+                    userMessage.classList.remove('hidden');
+                    sendMessage.classList.remove('hidden');
+                });
+
+                closeChat.addEventListener('click', () => {
+                    chatPopup.classList.add('hidden');
+                });
+
+                sendMessage.addEventListener('click', () => {
+                    const message = userMessage.value.trim();
+                    if (message) {
+                        // Simulate sending email (replace with your backend logic)
+                        console.log('Message sent:', message);
+                        userMessage.value = '';
+                        messageSent.classList.remove('hidden');
+                        setTimeout(() => {
+                            messageSent.classList.add('hidden');
+                        }, 3000);
+                    }
+                });
+            } else {
+                console.error("Chat elements not found!");
+            }
+        });
+    </script>
+
+    <script src="../assets/js/script.js"></script>
+    </body>
+    </html>
