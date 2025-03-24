@@ -81,7 +81,19 @@
             </nav>
         </div>
     </section>
-
+ <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('menu');
+    
+        if (btn && menu) {
+            btn.addEventListener('click', () => {
+                btn.classList.toggle('open');
+                menu.classList.toggle('hidden');
+            });
+        } else {
+            console.error("Menu button or menu element not found!");
+        }
+    </script>
 
     <!-- HERO SECTION -->
     <section id="header" class="bg-white text-gray-800 pt-20 md:pt-32 mt-28">
