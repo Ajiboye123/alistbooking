@@ -1,0 +1,755 @@
+[
+  {
+    "name": "Leonardo DiCaprio",
+    "image": "leo.jpg",
+    "page": "leo.html"
+  },
+    {
+      "name": "Taylor Swift",
+       "image": "taylor.jpg",
+      "page": "taylor.html"
+    },
+    {
+      "name": "LeBron James",
+       "image": "lebron.jpg",
+      "page": "lebron.html"
+    },
+    {
+      "name": "Beyoncé",
+      "image": "beyonce.jpg",
+      "page": "beyonce.html"
+    },
+    {
+      "name": "MrBeast",
+      "image": "mrbeast.jpg",
+      "page": "mrbeast.html"
+    },
+    {
+      "name": "Scarlett Johansson",
+       "image": "scarlett.jpg",
+      "page": "scarlett.html"
+    },
+    {
+      "name": "Drake",
+       "image": "drake.jpg",
+      "page": "drake.html"
+    },
+    {
+      "name": "Serena Williams",
+       "image": "serena.jpg",
+      "page": "serena.html"
+    },
+    {
+      "name": "Emma Chamberlain",
+       "image": "chamberlain.jpg",
+      "page": "chamberlain.html"
+    },
+    {
+      "name": "Tom Hanks",
+       "image": "hanks.jpg",
+      "page": "hanks.html"
+    },
+    {
+      "name": "Nicki Minaj",
+       "image": "nicki.jpg",
+      "page": "nicki.html"
+    },
+    {
+      "name": "Robert Downey Jr.",
+       "image": "robertdowneyjr.jpg",
+      "page": "robertdowneyjr.html"
+    },
+    {
+      "name": "Margot Robbie",
+       "image": "margotrobbie.jpg",
+      "page": "margotrobbie.html"
+    },
+    {
+      "name": "Chris Hemsworth",
+       "image": "chrishemsworth.jpg",
+      "page": "chrishemsworth.html"
+    },
+    {
+      "name": "Zendaya",
+       "image": "zendaya.jpg",
+      "page": "zendaya.html"
+    },
+    {
+      "name": "Will Smith",
+       "image": "willsmith.jpg",
+      "page": "willsmith.html"
+    },
+    {
+      "name": "Keanu Reeves",
+       "image": "keanureeves.jpg",
+      "page": "keanureeves.html"
+    },
+    {
+      "name": "Gal Gadot",
+       "image": "galgadot.jpg",
+      "page": "galgadot.html"
+    },
+    {
+      "name": "Ryan Reynolds",
+       "image": "ryanreynolds.jpg",
+      "page": "ryanreynolds.html"
+    },
+    {
+      "name": "Natalie Portman",
+       "image": "natalieportman.jpg",
+      "page": "natalieportman.html"
+    },
+    {
+      "name": "Idris Elba",
+       "image": "idriselba.jpg",
+      "page": "idriselba.html"
+    },
+    {
+      "name": "Charlize Theron",
+       "image": "charlizetheron.jpg",
+      "page": "charlizetheron.html"
+    },
+    {
+      "name": "Hugh Jackman",
+       "image": "hughjackman.jpg",
+      "page": "hughjackman.html"
+    },
+    {
+      "name": "Nicole Kidman",
+       "image": "nicolekidman.jpg",
+      "page": "nicolekidman.html"
+    },
+    {
+      "name": "Pedro Pascal",
+       "image": "pedropascal.jpg",
+      "page": "pedropascal.html"
+    },
+    {
+      "name": "Anya Taylor-Joy",
+       "image": "anyataylorjoy.jpg",
+      "page": "anyataylorjoy.html"
+    },
+    {
+      "name": "Austin Butler",
+       "image": "austinbutler.jpg",
+      "page": "austinbutler.html"
+    },
+    {
+      "name": "Jenna Ortega",
+       "image": "jennaortega.jpg",
+      "page": "jennaortega.html"
+    },
+    {
+      "name": "Lionel Messi",
+       "image": "lionelmessi.jpg",
+      "page": "lionelmessi.html"
+    },
+    {
+      "name": "Cristiano Ronaldo",
+       "image": "cristianoronaldo.jpg",
+      "page": "cristianoronaldo.html"
+    },
+    {
+      "name": "Stephen Curry",
+       "image": "stephencurry.jpg",
+      "page": "stephencurry.html"
+    },
+    {
+      "name": "Simone Biles",
+       "image": "simonebiles.jpg",
+      "page": "simonebiles.html"
+    },
+    {
+      "name": "Novak Djokovic",
+       "image": "novakdjokovic.jpg",
+      "page": "novakdjokovic.html"
+    },
+    {
+      "name": "Lewis Hamilton",
+       "image": "lewishamilton.jpg",
+      "page": "lewishamilton.html"
+    },
+    {
+      "name": "Erling Haaland",
+       "image": "erlinghaaland.jpg",
+      "page": "erlinghaaland.html"
+    },
+    {
+      "name": "Coco Gauff",
+       "image": "cocogauff.jpg",
+      "page": "cocogauff.html"
+    },
+    {
+      "name": "Shohei Ohtani",
+       "image": "shoheiohtani.jpg",
+      "page": "shoheiohtani.html"
+    },
+    {
+      "name": "Patrick Mahomes",
+       "image": "patrickmahomes.jpg",
+      "page": "patrickmahomes.html"
+    },
+    {
+      "name": "PewDiePie",
+       "image": "pewdiepie.jpg",
+      "page": "pewdiepie.html"
+    },
+    {
+      "name": "Charli D'Amelio",
+       "image": "charlidamelio.jpg",
+      "page": "charlidamelio.html"
+    },
+    {
+      "name": "Addison Rae",
+       "image": "addisonrae.jpg",
+      "page": "addisonrae.html"
+    },
+    
+        {
+          "name": "Dua Lipa",
+           "image": "dualipa.jpg",
+          "page": "dualipa.html"
+        },
+        {
+          "name": "Bad Bunny",
+           "image": "badbunny.jpg",
+          "page": "badbunny.html"
+        },
+        {
+          "name": "Ariana Grande",
+           "image": "arianagrande.jpg",
+          "page": "arianagrande.html"
+        },
+        {
+          "name": "Post Malone",
+           "image": "postmalone.jpg",
+          "page": "postmalone.html"
+        },
+        {
+          "name": "Olivia Rodrigo",
+           "image": "oliviarodrigo.jpg",
+          "page": "oliviarodrigo.html"
+        },
+        {
+          "name": "Billie Eilish",
+           "image": "billieeilish.jpg",
+          "page": "billieeilish.html"
+        },
+        {
+          "name": "Harry Styles",
+           "image": "harrystyles.jpg",
+          "page": "harrystyles.html"
+        },
+        {
+          "name": "Rihanna",
+           "image": "rihanna.jpg",
+          "page": "rihanna.html"
+        },
+        {
+          "name": "Lady Gaga",
+           "image": "ladygaga.jpg",
+          "page": "ladygaga.html"
+        },
+        {
+          "name": "Bruno Mars",
+           "image": "brunomars.jpg",
+          "page": "brunomars.html"
+        },
+        {
+          "name": "Ed Sheeran",
+           "image": "edsheeran.jpg",
+          "page": "edsheeran.html"
+        },
+        {
+          "name": "Adele",
+           "image": "adele.jpg",
+          "page": "adele.html"
+        },
+        {
+          "name": "The Weeknd",
+           "image": "theweeknd.jpg",
+          "page": "theweeknd.html"
+        },
+        {
+          "name": "Justin Bieber",
+           "image": "justinbieber.jpg",
+          "page": "justinbieber.html"
+        },
+        {
+          "name": "Shakira",
+           "image": "shakira.jpg",
+          "page": "shakira.html"
+        },
+        {
+          "name": "Eminem",
+           "image": "eminem.jpg",
+          "page": "eminem.html"
+        },
+        {
+          "name": "Kendrick Lamar",
+           "image": "kendricklamar.jpg",
+          "page": "kendricklamar.html"
+        },
+        {
+          "name": "SZA",
+           "image": "sza.jpg",
+          "page": "sza.html"
+        },
+        {
+          "name": "Doja Cat",
+           "image": "dojacat.jpg",
+          "page": "dojacat.html"
+        },
+        {
+          "name": "Cardi B",
+           "image": "cardib.jpg",
+          "page": "cardib.html"
+        },
+        {
+          "name": "Travis Scott",
+           "image": "travisscott.jpg",
+          "page": "travisscott.html"
+        },
+        {
+          "name": "David Attenborough",
+           "image": "attenborough.jpg",
+          "page": "attenborough.html"
+        },
+        {
+          "name": "Bear Grylls",
+           "image": "beargrylls.jpg",
+          "page": "beargrylls.html"
+        },
+        {
+          "name": "Noah Schnapp",
+           "image": "noahschnapp.jpg",
+          "page": "noahschnapp.html"
+        },
+        {
+          "name": "Millie Bobby Brown",
+           "image": "milliebobbybrown.jpg",
+          "page": "milliebobbybrown.html"
+        },
+        {
+          "name": "Halsey",
+           "image": "halsey.jpg",
+          "page": "halsey.html"
+        },
+        {
+          "name": "Lil Nas X",
+           "image": "lilnasx.jpg",
+          "page": "lilnasx.html"
+        },
+        {
+          "name": "DJ Khaled",
+           "image": "djkhaled.jpg",
+          "page": "djkhaled.html"
+        },
+        {
+          "name": "Pharrell Williams",
+           "image": "pharrell.jpg",
+          "page": "pharrell.html"
+        },
+        {
+          "name": "Zac Efron",
+           "image": "zacefron.jpg",
+          "page": "zacefron.html"
+        },
+        {
+          "name": "Lily Collins",
+           "image": "lilycollins.jpg",
+          "page": "lilycollins.html"
+        },
+        {
+          "name": "Simu Liu",
+           "image": "simuliu.jpg",
+          "page": "simuliu.html"
+        },
+            {
+                "name": "Florence Welch",
+                 "image": "florencewelch.jpg",
+                "page": "florencewelch.html"
+            },
+            {
+                "name": "Hideo Kojima",
+                 "image": "hideokojima.jpg",
+                "page": "hideokojima.html"
+            },
+            {
+                "name": "Timothée Chalamet",
+                 "image": "timotheechalamet.jpg",
+                "page": "timotheechalamet.html"
+            },
+            {
+                "name": "Florence Pugh",
+                 "image": "florencepugh.jpg",
+                "page": "florencepugh.html"
+            },
+            {
+                "name": "Jacob Elordi",
+                 "image": "jacobelordi.jpg",
+                "page": "jacobelordi.html"
+            },
+            {
+                "name": "Sydney Sweeney",
+                 "image": "sydneysweeney.jpg",
+                "page": "sydneysweeney.html"
+            },
+            {
+                "name": "Paul Mescal",
+                 "image": "paulmescal.jpg",
+                "page": "paulmescal.html"
+            },
+            {
+                "name": "Gordon Ramsay",
+                 "image": "gordonramsay.jpg",
+                "page": "gordonramsay.html"
+            },
+            {
+                "name": "Lewis Capaldi",
+                 "image": "lewiscapaldi.jpg",
+                "page": "lewiscapaldi.html"
+            },
+            {
+                "name": "Jamie Lee Curtis",
+                 "image": "jamieleecurtis.jpg",
+                "page": "jamieleecurtis.html"
+            },
+            {
+                "name": "Michelle Yeoh",
+                 "image": "michelleyeoh.jpg",
+                "page": "michelleyeoh.html"
+            },
+            {
+                "name": "Brendan Fraser",
+                 "image": "brendanfraser.jpg",
+                "page": "brendanfraser.html"
+            },
+            {
+                "name": "Ke Huy Quan",
+                 "image": "kehuyquan.jpg",
+                "page": "kehuyquan.html"
+            },
+            {
+                "name": "Usain Bolt",
+                 "image": "usainbolt.jpg",
+                "page": "usainbolt.html"
+            },
+            {
+                "name": "Michael Jordan",
+                 "image": "michaeljordan.jpg",
+                "page": "michaeljordan.html"
+            },
+            {
+                "name": "Roger Federer",
+                 "image": "rogerfederer.jpg",
+                "page": "rogerfederer.html"
+            },
+            {
+                "name": "Rafael Nadal",
+                 "image": "rafaelnadal.jpg",
+                "page": "rafaelnadal.html"
+            },
+            {
+                "name": "Tiger Woods",
+                 "image": "tigerwoods.jpg",
+                "page": "tigerwoods.html"
+            },
+            {
+                "name": "Simone Biles",
+                 "image": "simonebiles.jpg",
+                "page": "simonebiles.html"
+            },
+            {
+                "name": "Naomi Osaka",
+                 "image": "naomiosaka.jpg",
+                "page": "naomiosaka.html"
+            },
+            {
+                "name": "Michael Phelps",
+                 "image": "michaelphelps.jpg",
+                "page": "michaelphelps.html"
+            },
+            {
+                "name": "Katie Ledecky",
+                 "image": "katieledecky.jpg",
+                "page": "katieledecky.html"
+            },
+            {
+                "name": "Max Verstappen",
+                 "image": "maxverstappen.jpg",
+                "page": "maxverstappen.html"
+            },
+            {
+                "name": "Kylian Mbappé",
+                 "image": "kylianmbappe.jpg",
+                "page": "kylianmbappe.html"
+            },
+            {
+                "name": "Khaby Lame",
+                 "image": "khabylame.jpg",
+                "page": "khabylame.html"
+            },
+            {
+                "name": "David Dobrik",
+                 "image": "daviddobrik.jpg",
+                "page": "daviddobrik.html"
+            },
+            {
+                "name": "Logan Paul",
+                 "image": "loganpaul.jpg",
+                "page": "loganpaul.html"
+            },
+            {
+                "name": "Jake Paul",
+                 "image": "jakepaul.jpg",
+                "page": "jakepaul.html"
+            },
+            {
+                "name": "Ninja",
+                 "image": "ninja.jpg",
+                "page": "ninja.html"
+            },
+                {
+                    "name": "Greta Thunberg",
+                     "image": "gretathunberg.jpg",
+                    "page": "gretathunberg.html"
+                },
+                {
+                    "name": "Michelle Obama",
+                     "image": "michelleobama.jpg",
+                    "page": "michelleobama.html"
+                },
+                {
+                    "name": "Jeff Bezos",
+                     "image": "jeffbezos.jpg",
+                    "page": "jeffbezos.html"
+                },
+                {
+                    "name": "Keira Knightley",
+                     "image": "keiraknightley.jpg",
+                    "page": "keiraknightley.html"
+                },
+                {
+                    "name": "James Charles",
+                     "image": "jamescharles.jpg",
+                    "page": "jamescharles.html"
+                },
+                {
+                    "name": "Lilly Singh",
+                     "image": "lillysingh.jpg",
+                    "page": "lillysingh.html"
+                },
+                {
+                    "name": "Bradley Cooper",
+                     "image": "bradleycooper.jpg",
+                    "page": "bradleycooper.html"
+                },
+                {
+                    "name": "Robert Pattinson",
+                     "image": "robertpattinson.jpg",
+                    "page": "robertpattinson.html"
+                },
+                {
+                    "name": "Kristen Stewart",
+                     "image": "kristenstewart.jpg",
+                    "page": "kristenstewart.html"
+                },
+                {
+                    "name": "Chris Evans",
+                     "image": "chrisevans.jpg",
+                    "page": "chrisevans.html"
+                },
+                {
+                    "name": "Anne Hathaway",
+                     "image": "annehathaway.jpg",
+                    "page": "annehathaway.html"
+                },
+                {
+                    "name": "Ryan Gosling",
+                     "image": "ryangosling.jpg",
+                    "page": "ryangosling.html"
+                },
+                {
+                    "name": "Elon Musk",
+                     "image": "elonmusk.jpg",
+                    "page": "elonmusk.html"
+                },
+                {
+                    "name": "Emma Stone",
+                     "image": "emmastone.jpg",
+                    "page": "emmastone.html"
+                },
+                {
+                    "name": "Markiplier",
+                     "image": "markiplier.jpg",
+                    "page": "markiplier.html"
+                },
+                {
+                    "name": "Tom Hardy",
+                     "image": "tomhardy.jpg",
+                    "page": "tomhardy.html"
+                },
+                {
+                    "name": "Emily Blunt",
+                     "image": "emilyblunt.jpg",
+                    "page": "emilyblunt.html"
+                },
+                {
+                    "name": "Benedict Cumberbatch",
+                     "image": "benedictcumberbatch.jpg",
+                    "page": "benedictcumberbatch.html"
+                },
+                {
+                    "name": "KSI",
+                     "image": "ksi.jpg",
+                    "page": "ksi.html"
+                },
+                {
+                    "name": "Daniel Craig",
+                     "image": "danielcraig.jpg",
+                    "page": "danielcraig.html"
+                },
+                {
+                    "name": "Judi Dench",
+                     "image": "judidench.jpg",
+                    "page": "judidench.html"
+                },
+                {
+                    "name": "Cillian Murphy",
+                     "image": "cillianmurphy.jpg",
+                    "page": "cillianmurphy.html"
+                },
+                {
+                    "name": "Saoirse Ronan",
+                     "image": "saoirseronan.jpg",
+                    "page": "saoirseronan.html"
+                },
+                {
+                    "name": "Malala Yousafzai",
+                     "image": "malalayousafzai.jpg",
+                    "page": "malalayousafzai.html"
+                },
+                {
+                    "name": "Bill Gates",
+                     "image": "billgates.jpg",
+                    "page": "billgates.html"
+                },
+                {
+                    "name": "Mark Zuckerberg",
+                     "image": "markzuckerberg.jpg",
+                    "page": "markzuckerberg.html"
+                },
+                {
+                    "name": "Oprah Winfrey",
+                     "image": "oprahwinfrey.jpg",
+                    "page": "oprahwinfrey.html"
+                },
+                {
+                    "name": "Michelle Obama",
+                     "image": "michelleobama.jpg",
+                    "page": "michelleobama.html"
+                },
+                {
+                    "name": "David Beckham",
+                     "image": "davidbeckham.jpg",
+                    "page": "davidbeckham.html"
+                },
+                {
+                    "name": "Emma Watson",
+                     "image": "emmawatson.jpg",
+                    "page": "emmawatson.html"
+                },
+                {
+                    "name": "Kate Winslet",
+                     "image": "katewinslet.jpg",
+                    "page": "katewinslet.html"
+                },
+                {
+                    "name": "Daniel Radcliffe",
+                     "image": "danielradcliffe.jpg",
+                    "page": "danielradcliffe.html"
+                },
+                {
+                    "name": "Trevor Noah",
+                     "image": "trevornoah.jpg",
+                    "page": "trevornoah.html"
+                },
+                {
+                    "name": "Lupita Nyong'o",
+                     "image": "lupitanyongo.jpg",
+                    "page": "lupitanyongo.html"
+                },
+                {
+                    "name": "Davido",
+                     "image": "davido.jpg",
+                    "page": "davido.html"
+                },
+                {
+                    "name": "Tiwa Savage",
+                     "image": "tiwasavage.jpg",
+                    "page": "tiwasavage.html"
+                },
+                {
+                    "name": "Burnaboy",
+                     "image": "burnaboy.jpg",
+                    "page": "burnaboy.html"
+                },
+                {
+                    "name": "Wizkid",
+                     "image": "wizkid.jpg",
+                    "page": "wizkid.html"
+                },
+                {
+                    "name": "Dream",
+                     "image": "dream.jpg",
+                    "page": "dream.html"
+                },
+                {
+                    "name": "Rhett and Link",
+                     "image": "rhettandlink.jpg",
+                    "page": "rhettandlink.html"
+                },
+                {
+                    "name": "Kim Kardashian",
+                     "image": "kimkardashian.jpg",
+                    "page": "kimkardashian.html"
+                },
+                {
+                    "name": "Meghan Markle",
+                     "image": "meghanmarkle.jpg",
+                    "page": "meghanmarkle.html"
+                },
+                {
+                    "name": "Rick Hoffman",
+                     "image": "rickhoffman.jpg",
+                    "page": "rickhoffman.html"
+                },
+                {
+                    "name": "Gina Torres",
+                     "image": "ginatorres.jpg",
+                    "page": "ginatorres.html"
+                },
+                {
+                    "name": "Jeremy Strong",
+                     "image": "jeremystrong.jpg",
+                    "page": "jeremystrong.html"
+                },
+                {
+                    "name": "Brian Cox",
+                     "image": "briancox.jpg",
+                    "page": "briancox.html"
+                },
+                {
+                    "name": "Kieran Culkin",
+                     "image": "kieranculkin.jpg",
+                    "page": "kieranculkin.html"
+                },
+                {
+                    "name": "Jimmy Fallon",
+                     "image": "jimmyfallon.jpg",
+                    "page": "jimmyfallon.html"
+                }
+                
+               
+]
