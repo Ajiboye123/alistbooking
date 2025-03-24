@@ -1,0 +1,70 @@
+@import "tailwindcss";
+/* HAMBURGER MENU */
+
+.hamburger {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+  }
+  
+  .hamburger-top,
+  .hamburger-middle,
+  .hamburger-bottom {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 3px;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    transform: rotate(0);
+    transition: all 0.5s;
+  }
+  
+  .hamburger-middle {
+    transform: translateY(7px);
+  }
+  
+  .hamburger-bottom {
+    transform: translateY(14px);
+  }
+  
+  .open {
+    transform: rotate(90deg);
+    transform: translateY(0px);
+  }
+  
+  .open .hamburger-top {
+    transform: rotate(45deg) translateY(6px) translateX(6px);
+  }
+  
+  .open .hamburger-middle {
+    display: none;
+  }
+  
+  .open .hamburger-bottom {
+    transform: rotate(-45deg) translateY(6px) translateX(-6px);
+  }
+
+  h1.gradient-text { /* Or whatever selector you are using */
+    font-size: 5rem; /* Adjust as needed */
+    font-weight: bold;
+    padding-bottom: 1rem; /* Adjust as needed */
+    background-clip: text;
+    -webkit-background-clip: text; /* For Safari */
+    color: transparent;
+    background-image: linear-gradient(to right, indigo, purple); /* Adjust colors */
+    transition: background-image 0.3s ease; /* Smooth transition */
+  }
+  
+  h1.gradient-text:hover {
+    background-image: linear-gradient(to right, darkblue, darkmagenta); /* Adjust colors */
+  }
+  
+  @media (min-width: 768px) { /* Medium screens and larger */
+    h1.gradient-text {
+      font-size: 6rem; /* Adjust as needed */
+    }
+  }
