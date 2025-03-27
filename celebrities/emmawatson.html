@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../assets/css/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            color: #111;
+            margin-bottom: 0.5em;
+        }
+    </style>
+</head>
+
+<body>
+     <section>
+        <div class="bg-black fixed top-0 w-full z-50">
+            <nav class="relative container mx-auto px-6 py-3">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <a href="../index.html#header">
+                            <img src="../assets/img/logo.png" alt="Go to Header">
+                        </a>
+                        
+                    </div>
+                    <div class="flex items-center">
+                        <div class="flex flex-col lg:flex-row lg:items-center">
+                            <ul class="hidden space-x-8 font-bold lg:flex">
+                                <li class="group">
+                                    <a href="../index.html#celebritySection" class="text-white hover:text-gray-300 transition-all duration-200 active:text-gray-300 active:transform active:scale-110">Celebrity</a>
+                                    <div class="mx-2 mt-2 duration-500 border-b-2 opacity-0 border-white group-hover:opacity-100"></div>
+                                </li>
+                                <li class="group">
+                                    <a href="../pages/services.html" class="text-white hover:text-gray-300 transition-all duration-200 active:text-gray-300 active:transform active:scale-110">Services</a>
+                                    <div class="mx-2 mt-2 duration-500 border-b-2 opacity-0 border-white group-hover:opacity-100"></div>
+                                </li>
+                                <li class="group">
+                                    <a href="../pages/about.html" class="text-white hover:text-gray-300 transition-all duration-200 active:text-gray-300 active:transform active:scale-110">About</a>
+                                    <div class="mx-2 mt-2 duration-500 border-b-2 opacity-0 border-white group-hover:opacity-100"></div>
+                                </li>
+                                <li class="group">
+                                    <a href="../index.html#celebrityForm" class="text-white hover:text-gray-300 transition-all duration-200 active:text-gray-300 active:transform active:scale-110">Book a Celebrity</a>
+                                    <div class="mx-2 mt-2 duration-500 border-b-2 opacity-0 border-white group-hover:opacity-100"></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button id="menu-btn" class="block hamburger lg:hidden focus:outline-none" type="button">
+                        <span class="hamburger-top"></span>
+                        <span class="hamburger-middle"></span>
+                        <span class="hamburger-bottom"></span>
+                    </button>
+                </div>
+                <div id="menu" class="absolute hidden p-6 bg-black left-6 right-6 top-20 z-[100]">
+                    <div class="flex flex-col items-center justify-center w-full space-y-8 py-10 font-bold text-white rounded-sm">
+                        <a href="../index.html#celebritySection" class="w-full text-center hover:text-gray-300 transition-all duration-200 active:text-gray-300 active:transform active:scale-110">Celebrity</a>
+                        <a href="../pages/services.html" class="w-full text-center hover:text-gray-300 transition-all duration-200 active:text-gray-300 active:transform active:scale-110">Services</a>
+                        <a href="../pages/about.html" class="w-full text-center hover:text-gray-300 transition-all duration-200 active:text-gray-300 active:transform active:scale-110">About</a>
+                        <a href="../index.html#celebrityForm" class="w-full text-center hover:text-gray-300 transition-all duration-200 active:text-gray-300 active:transform active:scale-110">Book A Celebrity</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('menu');
+    
+        if (btn && menu) {
+            btn.addEventListener('click', () => {
+                btn.classList.toggle('open');
+                menu.classList.toggle('hidden');
+            });
+        } else {
+            console.error("Menu button or menu element not found!");
+        }
+    </script>
+    
+    <section class="pt-48 pb-12 md:pb-36 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="flex justify-center">
+                    <img id="celebrityImage" src="../celebrities/assets/emmawatson.jpg" alt="Emma Watson" class="rounded-lg shadow-md w-full max-w-md">
+                </div>
+                <div>
+                    <h1 id="celebrityName" class="text-4xl font-bold mb-4">Emma Watson</h1>
+    
+                    <div class="mb-6">
+                        <p id="celebrityBio" class="text-gray-700">
+                            Emma Charlotte Duerre Watson is a British actress, model, and activist. She has gained recognition for her roles in both blockbusters and independent films, as well as her women's rights work.
+                        </p>
+                        <ul class="list-none mt-2 text-gray-700">
+                            <li><strong>Born:</strong> April 15, 1990 (age 33 years), Paris, France</li>
+                        </ul>
+                    </div>
+    
+                    <div class="mb-4">
+                        <h3 class="text-lg font-semibold mb-2">Details:</h3>
+                        <ul id="celebrityDetails" class="list-disc list-inside text-gray-600">
+                            <li><strong>Known For:</strong> Acting, "Harry Potter" series, activism, women's rights advocacy</li>
+                            <li><strong>Notable Achievements:</strong> Iconic portrayal of Hermione Granger, BAFTA Britannia Award, Young Artist Award, critical acclaim for diverse roles, UN Women Goodwill Ambassador, significant influence in advocating for gender equality</li>
+                            <li><strong>Notable Roles:</strong> Hermione Granger in the "Harry Potter" film series, Belle in "Beauty and the Beast," Sam in "The Perks of Being a Wallflower," various roles in films like "Little Women," "Noah," and "The Bling Ring"</li>
+                            <li><strong>Other Ventures:</strong> Activism, women's rights advocacy, modeling, producing, social media presence</li>
+                        </ul>
+                    </div>
+                    <div class="py-6 flex justify-center md:justify-normal">
+                        <button onclick="scrollToRequestForm()" class="bg-black hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Book Now</button>
+                    </div>
+    
+                    <script>
+                        function scrollToRequestForm() {
+                            const requestForm = document.getElementById('requestForm');
+                            if (requestForm) {
+                                requestForm.scrollIntoView({ behavior: 'smooth' });
+                            }
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+  <!-- FORM SECTION -->
+  <section id="celebrityForm" class="pb-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-semibold text-center mb-2 text-gray-800">Request Entertainment</h2>
+        <p class="text-center mb-10 text-gray-600">Fill out the form below to request entertainment for your event.
+        </p>
+
+        <form class="max-w-lg mx-auto" onsubmit="return false;">
+
+            <div class="mb-4">
+                <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Your Name</label>
+                <input type="text" id="name"
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    placeholder="Enter your name">
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email</label>
+                <input type="email" id="email"
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    placeholder="Enter your email">
+                <p id="emailError" class="text-red-500 text-sm hidden"></p>
+            </div>
+            
+            <div class="mb-4">
+                <label for="phone" class="block text-gray-700 text-sm font-bold mb-2">Phone Number</label>
+                <input type="tel" id="phone"
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    placeholder="Enter your phone number">
+            </div>
+            <div class="mb-4">
+                <label for="eventDate" class="block text-gray-700 text-sm font-bold mb-2">Event Date</label>
+                <input type="date" id="eventDate"
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            </div>
+            <div class="mb-4">
+                <label for="eventType" class="block text-gray-700 text-sm font-bold mb-2">Event Type</label>
+                <select id="eventType"
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    <option value="corporate">Corporate Event</option>
+                    <option value="private">Private Party</option>
+                    <option value="wedding">Wedding</option>
+                    <option value="concert">Concert</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="mb-6">
+                <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message</label>
+                <textarea id="message" rows="4"
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    placeholder="Enter your message"></textarea>
+            </div>
+            <div class="flex items-center justify-center">
+                <button
+                    class="bg-black hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                    type="submit" id="submitRequestButton">
+                    Submit Request
+                </button>
+            </div>
+            <div id="requestMessageSent" class="mt-4 text-sm text-green-600 hidden text-center">
+                Message has been sent!
+            </div>
+        </form>
+    </div>
+</section>
+
+
+<script>
+    // --- 3. Form Submission Functionality ---
+const submitRequestButton = document.getElementById('submitRequestButton');
+const requestMessageSent = document.getElementById('requestMessageSent');
+const nameInput = document.getElementById('name');
+const emailInput = document.getElementById('email');
+const phoneInput = document.getElementById('phone');
+const eventDateInput = document.getElementById('eventDate');
+const eventTypeInput = document.getElementById('eventType');
+const messageInput = document.getElementById('message');
+const emailError = document.getElementById('emailError');
+
+// --- 3.1. Email Validation Function ---
+function isValidEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+}
+
+// --- 3.2. Restrict Date Input ---
+const today = new Date().toISOString().split('T')[0];
+eventDateInput.setAttribute('min', today);
+
+// --- 3.3. Form Submission Event Listener ---
+submitRequestButton.addEventListener('click', (event) => {
+    event.preventDefault();
+
+    const email = emailInput.value.trim();
+    const name = nameInput.value.trim();
+    const phone = phoneInput.value.trim();
+    const eventDate = eventDateInput.value;
+    const eventType = eventTypeInput.value;
+    const message = messageInput.value.trim();
+
+    // Validate Email
+    if (!isValidEmail(email)) {
+        if (emailError) { 
+            emailError.textContent = "Please enter a valid email address.";
+            emailError.classList.remove('hidden');
+        }
+        return;
+    } else {
+        if (emailError) { 
+            emailError.classList.add('hidden');
+        }
+    }
+
+    // Construct Email Body
+    const recipient = "someone@example.com";  // Change this to the actual recipient
+    const subject = "Entertainment Request";
+    const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0APhone: ${phone}%0D%0AEvent Date: ${eventDate}%0D%0AEvent Type: ${eventType}%0D%0AMessage: ${message}`;
+
+    // Open Default Email Client
+    window.location.href = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${body}`;
+
+    // Show Confirmation Message
+    requestMessageSent.textContent = "Request submitted successfully!";
+    requestMessageSent.classList.remove('hidden');
+
+    // Clear Form Fields
+    nameInput.value = '';
+    emailInput.value = '';
+    phoneInput.value = '';
+    eventDateInput.value = '';
+    eventTypeInput.value = '';
+    messageInput.value = '';
+
+    setTimeout(() => {
+        requestMessageSent.classList.add('hidden');
+    }, 3000);
+});
+
+</script>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12 md:pb-12 pb-12">
+        <div class="container mx-auto px-4 text-center">
+            <img src="../assets/img/logo.png" alt="Footer Logo" class="h-10 mx-auto mb-4">
+            <ul class="flex flex-col md:flex-row items-center md:justify-center md:space-x-6 mb-6 space-y-6 md:space-y-0">
+                <li><a href="../pages/about.html" class="hover:text-gray-300">About Us</a></li>
+                <li><a href="../pages/services.html" class="hover:text-gray-300">Services</a></li>
+                <li><a href="../index.html#celebrityForm" class="hover:text-gray-300">Contact</a></li>
+                <li><a href="#" class="hover:text-gray-300">Privacy Policy</a></li>
+            </ul>
+            <p class="text-sm font-extralight">&copy; 2025 A-List Booking Agency. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+ <!-- Button -->
+ <div id="chatButtonContainer" class="fixed bottom-4 right-4 z-50">
+    <button id="chatButton" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-full shadow-md transition-all duration-300 ease-in-out flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 animate-pulse" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+        </svg>
+        Chat
+    </button>
+
+    <div id="chatPopup" class="fixed bottom-10 right-10 bg-white rounded-lg shadow-lg w-80 p-4 transition-all duration-300 ease-in-out hidden">
+        <div class="flex justify-between items-center mb-4">
+            <h2 class="text-lg font-semibold">Hi there, how can we help?</h2>
+            <button id="closeChat" class="text-gray-500 hover:text-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+
+        <div id="faqSection" class="mb-4"></div>
+
+        <div id="faqAnswer" class="mb-4 hidden">
+            <p id="answerText" class="text-gray-600"></p>
+        </div>
+
+        <input type="email" id="userEmail" class="w-full border rounded-md p-2 mb-2" placeholder="Your Email">
+        <textarea id="userMessage" class="w-full border rounded-md p-2 mb-2" placeholder="Type your question or enquiry..."></textarea>
+        <button id="sendMessage" class="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-md">Send</button>
+        <p id="messageSent" class="mt-2 text-sm text-green-600 hidden">We will get back to you immediately.</p>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const chatButton = document.getElementById('chatButton');
+    const chatPopup = document.getElementById('chatPopup');
+    const closeChat = document.getElementById('closeChat');
+    const faqSection = document.getElementById('faqSection');
+    const faqAnswer = document.getElementById('faqAnswer');
+    const answerText = document.getElementById('answerText');
+    const userMessage = document.getElementById('userMessage');
+    const userEmail = document.getElementById('userEmail');
+    const sendMessage = document.getElementById('sendMessage');
+    const messageSent = document.getElementById('messageSent');
+
+    const faqs = [
+        { question: "How do I book a celebrity?", answer: "Visit the booking page and fill out the form." },
+        { question: "What types of events do you handle?", answer: "We handle corporate events, private parties, and more." },
+        { question: "Can I get a quote?", answer: "Yes, please contact us with your event details." },
+        { question: "How long does it take to confirm a booking?", answer: "Confirmation times vary, we will get back to you as soon as possible." }
+    ];
+
+    faqs.forEach(faq => {
+        const button = document.createElement('button');
+        button.textContent = faq.question;
+        button.classList.add('bg-gray-100', 'hover:bg-gray-200', 'text-gray-700', 'py-2', 'px-4', 'rounded-md', 'mb-2', 'w-full', 'text-left');
+        button.addEventListener('click', () => {
+            answerText.textContent = faq.answer;
+            faqAnswer.classList.remove('hidden');
+            userMessage.classList.add('hidden');
+            sendMessage.classList.add('hidden');
+        });
+        faqSection.appendChild(button);
+    });
+
+    chatButton.addEventListener('click', () => {
+        chatPopup.classList.remove('hidden');
+        faqAnswer.classList.add('hidden');
+        userMessage.classList.remove('hidden');
+        sendMessage.classList.remove('hidden');
+    });
+
+    closeChat.addEventListener('click', () => {
+        chatPopup.classList.add('hidden');
+    });
+
+    sendMessage.addEventListener('click', () => {
+        const message = userMessage.value.trim();
+        const email = userEmail.value.trim();
+
+        if (message && email) {
+            window.location.href = `mailto:support@alistbooking.com?subject=Chat Support Message&body=Client Email: ${encodeURIComponent(email)}%0A%0AMessage: ${encodeURIComponent(message)}`;
+
+            userMessage.value = '';
+            userEmail.value = '';
+            messageSent.classList.remove('hidden');
+            setTimeout(() => {
+                messageSent.classList.add('hidden');
+            }, 3000);
+        } else {
+            alert("Please provide both an email and a message.");
+        }
+    });
+});
+</script>
+
+
+    <script src="js/script.js"></script>
+    </body>
+    </html>
