@@ -14,6 +14,7 @@ let celebrities = [];
 let itemsPerPage = 8;
 let currentPage = 1;
 let isMobile = window.innerWidth < 768;
+let searchResults = []; // Store search results
 
 // --- 1.3. Fetch Celebrity Data ---
 fetch('celebrities.json')
@@ -36,7 +37,6 @@ function navToggle() {
     menu.classList.toggle('hidden');
 }
 
-
 // --- 1.5. Search Bar Styles ---
 searchInput.addEventListener('focus', () => {
     searchBar.classList.add('shadow-lg', 'border', 'border-indigo-200');
@@ -48,7 +48,6 @@ searchInput.addEventListener('blur', () => {
 // --- 1.6. Search Functionality ---
 function performSearch() {
     const searchTerm = searchInput.value.trim().toLowerCase();
-    let searchResults = [];
 
     if (searchTerm) {
         searchResults = celebrities.filter(celebrity =>
@@ -58,15 +57,15 @@ function performSearch() {
         searchResults = celebrities;
     }
 
-    displaySearchResults(searchResults);
+    displaySearchResults();
 }
 
-function displaySearchResults(results) {
+function displaySearchResults() {
     catalog.innerHTML = '';
     pagination.innerHTML = ""; // Remove pagination when searching
 
-    if (results.length > 0) {
-        displayCelebritiesData(results); // Use the existing display function with search results
+    if (searchResults.length > 0) {
+        displayCelebritiesData(searchResults); // Use the existing display function with search results
     } else {
         catalog.innerHTML = `<p class="text-center w-full">No matching celebrities found.</p>`;
     }
@@ -127,7 +126,7 @@ function displayCelebritiesData(data) {
         if (isMobile) {
             item.classList.add('flex-shrink-0', 'w-full', 'snap-center');
         }
-    
+
         item.innerHTML = `
             <img src="celebrities/assets/${celebrity.image}" alt="${celebrity.name}" class="w-full h-64 object-cover">
             <div class="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-black to-transparent flex items-center justify-between px-4">
@@ -188,93 +187,77 @@ function createPaginationButton(text, page) {
 function checkScreenSize() {
     isMobile = window.innerWidth < 768;
     currentPage = 1;
-    displayCelebrities(currentPage);
-    displayPagination();
+    if(searchResults.length > 0){
+        displaySearchResults();
+    } else {
+        displayCelebrities(currentPage);
+        displayPagination();
+    }
 }
 
-window.addEventListener('resize', checkScreenSize);
-
 // --- 2. Chat and FAQ Functionality ---
-const chatButton = document.getElementById('chatButton');
-const chatPopup = document.getElementById('chatPopup');
-const closeChat = document.getElementById('closeChat'); // Get the close button here
-const faqSection = document.getElementById('faqSection');
-const faqAnswer = document.getElementById('faqAnswer');
-const answerText = document.getElementById('answerText');
-const userMessage = document.getElementById('userMessage');
-const sendMessage = document.getElementById('sendMessage');
-const messageSent = document.getElementById('messageSent');
-
-// --- 2.1. FAQ Data ---
-const faqs = [
-    { question: "How do I book a celebrity?", answer: "Visit the booking page and fill out the form." },
-    { question: "What types of events do you handle?", answer: "We handle corporate events, private parties, and more." },
-    { question: "Can I get a quote?", answer: "Yes, please contact us with your event details." },
-    { question: "How long does it take to confirm a booking?", answer: "Confirmation times vary, we will get back to you as soon as possible." }
-];
-
-// --- 2.3. Create FAQ Buttons ---
-faqs.forEach(faq => {
-    const button = document.createElement('button');
-    button.textContent = faq.question;
-    button.classList.add('bg-gray-100', 'hover:bg-gray-200', 'text-gray-700', 'py-2', 'px-4', 'rounded-md', 'mb-2', 'w-full', 'text-left');
-    button.addEventListener('click', () => {
-        answerText.textContent = faq.answer;
-        faqAnswer.classList.remove('hidden');
-        userMessage.classList.add('hidden');
-        sendMessage.classList.add('hidden');
-    });
-    faqSection.appendChild(button);
-});
-
-// --- 2.4. Event Listeners for Chat ---
-chatButton.addEventListener('click', () => {
-    chatPopup.classList.remove('hidden');
-    faqAnswer.classList.add('hidden');
-    userMessage.classList.remove('hidden');
-    sendMessage.classList.remove('hidden');
-});
-
-// --- 2.5. Close Chat Event Listener (Moved to global scope) ---
-closeChat.addEventListener('click', () => {
-    chatPopup.classList.add('hidden');
-});
-
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('Script loaded');
+    const chatButton = document.getElementById('chatButton');
+    const chatPopup = document.getElementById('chatPopup');
+    const closeChat = document.getElementById('closeChat');
+    const faqSection = document.getElementById('faqSection');
+    const faqAnswer = document.getElementById('faqAnswer');
+    const answerText = document.getElementById('answerText');
+    const userMessage = document.getElementById('userMessage');
+    const userEmail = document.getElementById('userEmail');
+    const sendMessage = document.getElementById('sendMessage');
+    const messageSent = document.getElementById('messageSent');
 
-    // --- 2.6. Send Message Functionality (with Fetch) ---
+    const faqs = [
+        { question: "How do I book a celebrity?", answer: "Visit the booking page and fill out the form." },
+        { question: "What types of events do you handle?", answer: "We handle corporate events, private parties, and more." },
+        { question: "Can I get a quote?", answer: "Yes, please contact us with your event details." },
+        { question: "How long does it take to confirm a booking?", answer: "Confirmation times vary, we will get back to you as soon as possible." }
+    ];
+
+    faqs.forEach(faq => {
+        const button = document.createElement('button');
+        button.textContent = faq.question;
+        button.classList.add('bg-gray-100', 'hover:bg-gray-200', 'text-gray-700', 'py-2', 'px-4', 'rounded-md', 'mb-2', 'w-full', 'text-left');
+        button.addEventListener('click', () => {
+            answerText.textContent = faq.answer;
+            faqAnswer.classList.remove('hidden');
+            userMessage.classList.add('hidden');
+            sendMessage.classList.add('hidden');
+        });
+        faqSection.appendChild(button);
+    });
+
+    chatButton.addEventListener('click', () => {
+        chatPopup.classList.remove('hidden');
+        faqAnswer.classList.add('hidden');
+        userMessage.classList.remove('hidden');
+        sendMessage.classList.remove('hidden');
+    });
+
+    closeChat.addEventListener('click', () => {
+        chatPopup.classList.add('hidden');
+    });
+
     sendMessage.addEventListener('click', () => {
         const message = userMessage.value.trim();
-        if (message) {
-            fetch('http://localhost:3000/send-email', { // Adjust URL if needed
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ message: message }),
-            })
-            .then(response => response.json()) //parse the response as json.
-            .then(data => {
-                console.log(data);
-                userMessage.value = '';
-                messageSent.textContent = "Message sent successfully!"; //Change message text.
-                messageSent.classList.remove('hidden');
-                setTimeout(() => {
-                    messageSent.classList.add('hidden');
-                }, 3000);
-            })
-            .catch(error => {
-                console.error('Error sending email:', error);
-                messageSent.textContent = "Failed to send message. Please try again.";
-                messageSent.classList.remove('hidden');
-                setTimeout(() => {
-                    messageSent.classList.add('hidden');
-                }, 3000);
-            });
+        const email = userEmail.value.trim();
+
+        if (message && email) {
+            window.location.href = `mailto:support@alistbooking.com?subject=Chat Support Message&body=Client Email: ${encodeURIComponent(email)}%0A%0AMessage: ${encodeURIComponent(message)}`;
+
+            userMessage.value = '';
+            userEmail.value = '';
+            messageSent.classList.remove('hidden');
+            setTimeout(() => {
+                messageSent.classList.add('hidden');
+            }, 3000);
+        } else {
+            alert("Please provide both an email and a message.");
         }
     });
 });
+
 
 // --- 3. Form Submission Functionality ---
 const submitRequestButton = document.getElementById('submitRequestButton');
@@ -302,29 +285,38 @@ submitRequestButton.addEventListener('click', (event) => {
     event.preventDefault();
 
     const email = emailInput.value.trim();
+    const name = nameInput.value.trim();
+    const phone = phoneInput.value.trim();
+    const eventDate = eventDateInput.value;
+    const eventType = eventTypeInput.value;
+    const message = messageInput.value.trim();
 
+    // Validate Email
     if (!isValidEmail(email)) {
-        emailError.textContent = "Please enter a valid email address.";
-        emailError.classList.remove('hidden');
+        if (emailError) { 
+            emailError.textContent = "Please enter a valid email address.";
+            emailError.classList.remove('hidden');
+        }
         return;
     } else {
-        emailError.classList.add('hidden');
+        if (emailError) { 
+            emailError.classList.add('hidden');
+        }
     }
 
-    const formData = {
-        name: nameInput.value,
-        email: email,
-        phone: phoneInput.value,
-        eventDate: eventDateInput.value,
-        eventType: eventTypeInput.value,
-        message: messageInput.value,
-    };
+    // Construct Email Body
+    const recipient = "someone@example.com";  // Change this to the actual recipient
+    const subject = "Entertainment Request";
+    const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0APhone: ${phone}%0D%0AEvent Date: ${eventDate}%0D%0AEvent Type: ${eventType}%0D%0AMessage: ${message}`;
 
-    console.log('Form data sent:', formData);
+    // Open Default Email Client
+    window.location.href = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${body}`;
 
+    // Show Confirmation Message
     requestMessageSent.textContent = "Request submitted successfully!";
     requestMessageSent.classList.remove('hidden');
 
+    // Clear Form Fields
     nameInput.value = '';
     emailInput.value = '';
     phoneInput.value = '';
@@ -336,3 +328,5 @@ submitRequestButton.addEventListener('click', (event) => {
         requestMessageSent.classList.add('hidden');
     }, 3000);
 });
+
+
